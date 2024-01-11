@@ -235,3 +235,4 @@ Napisz funkcję, która będzie pobierała dwa parametry wejściowe:
 łańcuch znaków
 liczbę całkowitą
 Funkcja ma skracać podany łańcuch znaków tak, żeby po dodaniu ... na końcu jego długość nie była większa niż max (podany jako drugi parametr) i aby tekst nie był urwany w połowie wyrazu. Funkcja zwraca skrócony tekst.
+
