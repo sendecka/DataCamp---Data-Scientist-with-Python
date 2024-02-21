@@ -1,5 +1,5 @@
 # 4 - Macierze
-## 1.Utwórz macierz z 3 wierszy i 8 kolumn z wartościami 1:24
+#### 1.Utwórz macierz z 3 wierszy i 8 kolumn z wartościami 1:24
 ```
 matrix(1:24, nrow=3, ncol=8)
 ```
