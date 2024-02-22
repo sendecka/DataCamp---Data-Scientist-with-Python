@@ -141,3 +141,52 @@ l1$moj[2, ]
 mean(l1$a1)
 l1$moj[2,l1$moj[2, ] > mean (l1$a1)]
 ```
+
+
+
+# Zadanie 6. Factora
+
+#### 1. Utwórz vector vf1 o długości 17 z elementów ("mały", "średni", "duży")
+```
+vf1 <- sample(c("mały", "średni", "duży"), 17, replace = T)
+vf1
+```
+#### 2. Przekształć vf1 w faktor ff1 (bez kolejności)
+```
+ff1 <- factor(vf1)
+```
+#### 3. Utwórz vector vf2 o długości 14 z wartościami całkowitymi z przedziału od 1 do 6.
+```
+vf2 <- sample(1:6, 14, replace = T)
+vf2
+```
+#### 4. Z vf2 utwórz factor ff2 tak aby poziomy miały nazwy od "F" do "A"
+```
+ff2 <- factor(vf2, levels = 1:6, labels = LETTERS[6:1])
+ff2
+```
+#### 5. Wyświetl poziomy ff2
+```
+levels(ff2)
+```
+#### 6. Policz wystąpienia "C" w FF2
+```
+sum(ff2 == "C")
+```
+#### 7. Z vf2 utwórz ordered factor
+```
+ordered(vf2)
+factor(vf2, ordered=T)
+```
+#### 8. Za pomocą table() wyświetl wynik dla vf2
+```
+table(vf2)
+```
+#### 9. Z ff2 wybierz elementy 1,5 i 12
+```
+ff2[c(1,5,12)]
+```
+#### 10. Z ff2 wybierz elementy o wartości "A" i "D"
+```
+ff2[ff2=="A" | ff2=="D"]
+```
