@@ -86,4 +86,58 @@ mt[2, mt[2, ]%% 2 == 0] <- 2
 mt[3, mt[3, ]%% 2 == 0] <- 2
 mt
 ```
-    
+
+
+# Zadanie 5. Listy
+
+#### 1. Utwórz listę 11 z 3 elementów a1: vector numeryczny 5 elementowy, a2: 3 elementowy wektor logiczny, a3: 13 elementowy vector znakowy
+```
+l1 <- list(a1 = c(1,2,6,9,5), a2 = c(T,F,F), a3 = letters[2:14])
+```
+#### 2. Wybierz element a3 listy
+```
+l1$a3
+```
+#### 3. Sprawdź typ wybranego elementu
+```
+typeof(l1$a3)
+```
+#### 4. Wybierz element a1 jako vector
+```
+v <- l1$a1; v
+```
+#### 5. Wybierz pierwsze 3 elementy z a3
+```
+l1$a3[1:3]
+```
+#### 6. Wyświetl nazwy elementów listy
+```
+names(l1)
+```
+#### 7. Dodaj do listy element 'moj' w postaci macierzy 3 kolumny 4 wiersze o wartości z zakresu 1:12
+```
+l1$moj <- matrix(1:12, ncol = 4, nrow = 3)
+```
+#### 8 .Wypisz wartość 4 do 3 elementu vectora a1
+```
+l1$a3[3] <- 4
+```
+#### 9. Stwórz listę 12 złożoną z 3 wektorów liczbowych 1:43, 3:56, -5:8
+```
+l2 <- list (1:43, 3:56, -5:8);l2
+```
+#### 10. Połącz listę l1 i l2 w listę l3
+```
+l3 <- c(l2, l1); l3
+```
+#### 11. (*) Dodaj listę l1 jako element l2
+```
+l2$l1 <- l1;l2
+```
+#### 12. (*) Wybierz z macierzy 'moj' 2 wiersze i kolumny o wartościach powyżej średniej wartości elementów z a1
+```
+l1$moj
+l1$moj[2, ]
+mean(l1$a1)
+l1$moj[2,l1$moj[2, ] > mean (l1$a1)]
+```
