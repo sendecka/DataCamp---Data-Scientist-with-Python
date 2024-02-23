@@ -233,3 +233,50 @@ colnames(df)
 ```
 df[df$hi > 150,]
 ```
+
+
+
+# Zadanie 8 Import/Eksport
+
+#### 1. Utwórz wektory v <- -100:100, wektor logiczny 1 <- c(T,F,T,T,T,F), 
+#### wektor c("A ja jaj", "OJ", "Pff")
+```
+V <- -100:100;v
+l <- c(T,F,T,T,T,F); l
+c <- c("A ja jaj", "OJ", "Pff"); c
+```
+#### 2. Zapisz wektor v do pliku vfile.RData
+```
+save(v,file="vfile.RData")
+```
+#### 3. Zapisz wektory l i c plik lc.RData
+```
+save(l,c,file="lc.RData")
+```
+#### 4. Przypisz wektor c do v
+```
+v<-c;v
+```
+#### 5. Załaduj dane z pliku vfile.RData
+```
+load(file="vfile.RData")
+v
+```
+#### 6. Obejrzyj plik c1.csv i odczytaj z niego dane
+```
+read.table(file="c1.csv")
+```
+#### 7. Zapisz v do pliku vfile.csv
+```
+write.table(x=v, file="vfile.csv")
+```
+#### 8. Załaduj dane z pliku x1.xlsx
+```
+library(openxlsx)
+read.x(sx(xlsxFile = "x1.xlsx", sheet = 1))
+```
+#### 9. Odczytaj dane z pliku r.dbf (użyj read.dbf z pakietu foreign)
+```
+library(foreign)
+read.dbf(flie =  "r.dbf")
+```
