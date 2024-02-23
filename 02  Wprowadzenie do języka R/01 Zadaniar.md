@@ -190,3 +190,46 @@ ff2[c(1,5,12)]
 ```
 ff2[ff2=="A" | ff2=="D"]
 ```
+
+
+# Zadanie 7 DATA FRAME
+
+#### 1. Utwórz Data Frame df ze zmiennych: 
+#### a. C1 - vector 8 elementowy z imionami osób c("Ala", "Beata", "Marek", "Igor", "Franciszek", "Adam", "Tomek", "Argh")
+#### b. S1 - vector 8 elementowy z płcią poszczególnych osób c("k", "k", "m", "m", "m", "m", "m", "m")
+#### c. Hi - vecor z wzrostem w cm poszczególnych osób sample(100:220, 8)
+```
+c1 <- c("Ala", "Beata", "Marek", "Igor", "Franciszek", "Adam", "Tomek", "Argh")
+s1 <- c("k", "k", "m", "m", "m", "m", "m", "m")
+hi <- sample(100:220, 8)
+df <- data.frame(c1, s1, hi);
+```
+#### 2. Wyświetl strukturę df
+```
+str(df)
+```
+#### 3. Wyświetl elementy df
+```
+df
+```
+#### 4. Wyświetl wymiar df
+```
+dim(df)
+```
+#### 5. Z df wybierz 2 i 5 linie
+```
+df[c(2,5),]
+```
+#### 6. Z df wybierz zmienną hi
+```
+df$hi
+df[ ,3]
+```
+#### 7. Wyświetl nazwy zmiennych z df
+```
+colnames(df)
+```
+#### 8. Z df wybierz linie dla których w hi znajduje się wartość większa od 150
+```
+df[df$hi > 150,]
+```
