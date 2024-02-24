@@ -317,3 +317,50 @@ vnii<-c(sqrt(-1),exp(1000),-exp(1000))
 vnii[vnii == Inf]<-42
 vnii
 ```
+
+
+# Zadanie 10 Podstawowe funkcje matematyczne
+
+#### 1. Utwórz vector a jako -12:12
+```
+a<- -12:12;a
+```
+#### 2. Wylicz wartości bezwzględne elementów a
+```
+abs(a)
+```
+#### 3. Wylicz pierwiastek dla liczb z zakresu od -3 do 10
+```
+sqrt(-3:10)
+```
+#### 4. Dla każdego elementu a oblicz exp wynik przypisz do ve
+```
+ve <-exp(a); ve
+```
+#### 5. Oblicz logarytm z liczby 3
+```
+log(3)
+```
+#### 6. Użyj sinpi() do obliczeń sinusa 30 stopni
+```
+sinpi(1/6)
+```
+#### 7. Zaokrąglij wartość ve do liczb całkowitych
+```
+ve
+round(ve);ve
+```
+#### 8. Zaokrąglij wartość ve do 3 miejsc po przecinku
+```
+round(ve, digits=3)
+```
+##### 9. Zaokrąglij wartość ve do pełnych 100
+```
+round(ve, digit = -2)
+```
+#### 10. Na wartościach ve użyj metody floor(), celing(), trun()
+```
+floor(ve)
+ceiling(ve)
+trunc(ve)
+```
