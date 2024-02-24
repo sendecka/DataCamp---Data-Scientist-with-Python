@@ -280,3 +280,40 @@ read.x(sx(xlsxFile = "x1.xlsx", sheet = 1))
 library(foreign)
 read.dbf(flie =  "r.dbf")
 ```
+
+
+# Zadanie 9 Wartości specjalne
+
+#### 1. Utwórz 100 elementowy wektor t z wartościami z zakrasu od 20 do 90
+```
+t<-sample(20:90, 100, replace = T);t
+```
+#### 2. W t wpisz w wartości NA dla wartości z przedziału od 60 do 80
+```
+t[t>60 & t<=80]<-NA
+```
+#### 3. Użyj is.na() na wektorze t
+```
+is.na(t)
+```
+#### 4. Utwórz 20 elementowy vector v o wartościach z przedziału od -7 do 3
+```
+v<-sample(-7:3,20,replace=T);v
+```
+#### 5. Policz pierwiastek z vectora v
+```
+sqrt(v)
+```
+#### 6. Wypisz wartości dla których pierwiastek daje wartość NAN
+```
+v[is.nan(sqrt(v))]
+```
+#### 7. Korzystając ze swojej wiedzy matematycznej utwórz vector vnii z wartościami Nan, -Inf, Inf
+```
+vnii<-c(sqrt(-1),exp(1000),-exp(1000))
+```
+#### 8. Sprawdź, które z wartości w tym wektorze są Inf i wypisz w nie wartośc 42,
+```
+vnii[vnii == Inf]<-42
+vnii
+```
