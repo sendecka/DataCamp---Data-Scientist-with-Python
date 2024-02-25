@@ -364,3 +364,38 @@ floor(ve)
 ceiling(ve)
 trunc(ve)
 ```
+
+
+
+# Zadanie 11 Podstawowe funkcje znakowe
+
+#### 1. Utwórz wektor znakowy s o zawartości "DUŻE", "małe, "te inne 123456789"
+```
+s <- c("DUŻE", "małe", "te inne 123456789")
+s
+```
+#### 2. Oblicz liczbę znaków elementów s
+```
+nchart(s)
+```
+#### 3. Utwórz s1 jako połączenie elementów s oddzielowych spacją
+```
+s1<-paste(s,collapse=" ")
+```
+#### 4. Wyświetl s1 w postaci małych liter
+```
+tolower(s1)
+```
+#### 5. Utwórz 300 elementowy wektor a o zawartości: "a.1", "a.2", ...,"a.300"
+```
+a<-paste("a", 1:300, sep=",");a
+```
+#### 6. Znajdź indeks elementu "a.9"
+```
+match("a.9",a)
+```
+#### 7. W napisie "Ala ma kota. Ala na rybki" zmień "kota" na"psa"
+```
+ar<-sub(x=c("Ala ma kota. Ala ma rybki"), pattern="kota", replacement="psa")
+ar
+```
