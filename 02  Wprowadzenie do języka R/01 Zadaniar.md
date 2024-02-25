@@ -399,3 +399,48 @@ match("a.9",a)
 ar<-sub(x=c("Ala ma kota. Ala ma rybki"), pattern="kota", replacement="psa")
 ar
 ```
+
+
+# Zadanie 12 Podstawowe funkcje losujące/funkcje analityczne
+
+#### 1.
+```
+v<-rnorm(30);v
+```
+#### 2.
+```
+mean(v)
+```
+#### 3.
+```
+median(v)
+```
+#### 4.
+```
+quantile(v)
+```
+#### 5.
+```
+sd(v)
+```
+#### 6.
+```
+pl<-sample(-10:10, 7); pl
+```
+#### 7.
+```
+p2<--3:4; p2
+```
+#### 8.
+```
+min(p1)
+```
+#### 9.
+```
+range(v)
+```
+#### 10.
+```
+p1; p2
+pmin(p1,p2)
+```
