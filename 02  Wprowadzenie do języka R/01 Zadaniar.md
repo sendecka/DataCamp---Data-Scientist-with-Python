@@ -473,3 +473,52 @@ for(e in v) {
 s
 sum(s)
 ```
+
+
+# ZADANIE 14 WŁASNE FUNKCJE
+
+#### 1. Napisz funkcję foo wyświetlającą na konsolę wartość podanego parametru
+```
+foo <- function(x) {
+  print(x)
+}
+
+foo(14)
+foo(1:8)
+```
+#### 2. Napisz funkcję hgtg zwracającą liczbę 42
+```
+hgtg <- function() {
+  return(42)
+}
+
+c <-hgtg(); c
+```
+#### 3. Napisz funkcję goo zwracającą podany element wektora -100:100
+```
+goo <- function(x = 15) {
+  return((-100:100)[x])
+}
+
+goo(4)
+goo(48)
+goo(4008)
+goo(1:5)
+```
+#### 4. Zmodyfikuj goo tak by obsłużyć przypadki szczególne
+```
+goo <-function(x) {
+  if(length(x) !=1) {
+    warning("Za dużo wartości")
+    return(NA)
+  }
+  if(x<1 | x>length(-100:100)) {
+    warning("Indeks spoza zakresu")
+    return(NA)
+  }
+  return((-100:100)[x])
+}
+goo(0)
+goo(45)
+goo(4000)
+```
