@@ -403,43 +403,43 @@ ar
 
 # Zadanie 12 Podstawowe funkcje losujące/funkcje analityczne
 
-#### 1.
+#### 1. Używając rozkładu normalnego wylosuj 30 liczb i zapisz je w wektorze v
 ```
 v<-rnorm(30);v
 ```
-#### 2.
+#### 2. Oblicz średnią elementów v
 ```
 mean(v)
 ```
-#### 3.
+#### 3. Oblicz medianę elementów v
 ```
 median(v)
 ```
-#### 4.
+#### 4. Oblicz kwantyl rzędu 0.1 wektora v
 ```
 quantile(v)
 ```
-#### 5.
+#### 5. Oblicz odchylenie standardowe v
 ```
 sd(v)
 ```
-#### 6.
+#### 6. Utwórz wektor 7 elementowy p1 o zakresie wartości od -10 do 10
 ```
 pl<-sample(-10:10, 7); pl
 ```
-#### 7.
+#### 7. Utwórz wektor -3:4 i nazwij go p2
 ```
 p2<--3:4; p2
 ```
-#### 8.
+#### 8. Oblicz minimum z wartości p1
 ```
 min(p1)
 ```
-#### 9.
+#### 9. Wylicz zakres wartości wektora v
 ```
 range(v)
 ```
-#### 10.
+#### 10. Oblicz minimalne wartości między wektorami p1 i p2
 ```
 p1; p2
 pmin(p1,p2)
@@ -464,7 +464,7 @@ if (mean(v)>20){
 ifelse(mean(v)>20, "TAK", "NIE")
 if(mean(v)>20) print("TAK") else print("NIE")
 ```
-#### 3.
+#### 3. Korzystając z pętli for napisz skrypt wyliczający sumę elementów v i wyświetlający ją na konsoli
 ```
 s<-0
 for(e in v) {
