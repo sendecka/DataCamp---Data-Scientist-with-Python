@@ -444,3 +444,32 @@ range(v)
 p1; p2
 pmin(p1,p2)
 ```
+
+
+# Zadanie 13 Instrukcje sterujące
+
+#### 1. Utwórz wektor v o 10 elementach z zakresu od -100:100
+```
+v<-sample(-100:100,10); v
+```
+#### 2. Napisz instrukcję warunkową tak by wyświetlić "TAK" 
+#### jeśli średnia z elementów v jest większa niż 20 i "NIE" w przeciwnym wypadku
+```
+if (mean(v)>20){
+  print("TAK")
+} else{
+  print("NIE")
+}
+
+ifelse(mean(v)>20, "TAK", "NIE")
+if(mean(v)>20) print("TAK") else print("NIE")
+```
+#### 3.
+```
+s<-0
+for(e in v) {
+  s<-s+e
+}
+s
+sum(s)
+```
