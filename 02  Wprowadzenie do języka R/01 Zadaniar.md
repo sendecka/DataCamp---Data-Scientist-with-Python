@@ -1,3 +1,69 @@
+
+
+# 3.2 Część B
+#### 1. Utwórz vector składający się z 13 pierwszych małych liter alfabetu i nazwij go l (? letters)
+```
+l <- letters[1:13]
+```
+#### 2. Z l wybierz 3 pierwsze elementy
+```
+l[1:3]
+```
+#### 3. Z l wybierz 3, 5, i 9 element
+```
+l[c(3, 5, 9)]
+```
+#### 4. Z l wybierz elementy o indeksach parzystych
+```
+l[c(F,T)]
+```
+#### 5. Wybierz z l elementy powyżej „g”
+```
+l[l>"g"]
+```
+#### 6. Utwórz vector q o długości 20 elementów składający się z wartości od -5 do 5
+```
+q <- seq(-5,5, length.out =  20)
+q
+q <- sample(-5:5, 20,replace = T)
+q
+```
+#### 7. Utwórz logiczny vector z wartością true dla elementów q większych od 2
+```
+q>2
+```
+#### 8. Z q wybierz elementy większe od 2
+```
+lq <- q[q>2]
+lq
+```
+#### 9. Policz ile jest takich elementów
+```
+length(q[q>2])
+```
+#### 10. Z q wybierz co 3 element
+```
+q[c(F,F,T)]
+```
+#### 11. Z q wybierz elementy których kwadrat jest większy od 7
+```
+q[q*q>7]
+```
+#### 12. Utwórz vectory: a1 z wartościami od 4 do 7 i a2 z wartościami od 0 do 9
+```
+a1 <- 4:7
+a2 <- 0:9
+```
+#### 13. Oblicz sumę elementów a1 (? sum)
+```
+sum(a1)
+```
+#### 14. Posortuj vector d (? order)
+```
+d[order(d)]
+```
+
+
 # 4 - Macierze
 #### 1. Utwórz macierz z 3 wierszy i 8 kolumn z wartościami 1:24
 ```
