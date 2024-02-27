@@ -1,4 +1,77 @@
-
+# 3 Vectors
+# 3.1 Część A
+#### 1. Na trzy różne sposoby utwórz vector o wartościach od -2 do 4 (-2, -1, 0, 1, 2, 3, 4). Przypisz je do
+obiektów v1, v2, v3
+```
+v1 <- -2:4;
+v2 <- c(-2, -1, 0, 1, 2, 3, 4)
+v3 <- seq(-2,4)
+v1;v2;v3
+```
+#### 2. Sprawdź czy vectory v1, v2, v3 są identyczne. Użyj: identical()
+```
+identical(v1,v2)
+identical(v1,v3)
+identical(v2,v3)
+```
+#### 3. Utwórz 13 elementowy vector d o wartościach z zakresu od -2.7 do 9.3
+```
+d<- sample(seq(-2.7,9.3, by=0.1), 13)
+d
+```
+#### 4. Policz średnią z wartości d (? mean)
+```
+? mean
+mean(d)
+```
+#### 5. Wyświetl liczbę elementów d
+```
+length(d)
+```
+#### 6. Utwórz vector d1 jak sumę d i v1
+```
+d1 <- d+v1
+d1
+```
+#### 7. Wyświetl liczbę elementów d1
+```
+length(d1)
+```
+#### 8. Utwórz vektor d2 składający się z elementów d1 i v2
+```
+d2 <- c(d1,v2)
+d2
+```
+#### 9. Utwórz vector składający się z 3 powtórzeń d.
+```
+rep(d,3)
+```
+#### 10. Utwórz vector z zwielokrotniając każdy element d dwukrotnie.
+```
+z <- rep(d,each=2)
+z
+```
+#### 11. Sprawdź typ d
+```
+typeof(d)
+```
+#### 12. Utwórz vector f składający się z liczb całkowitych od 5 do 9 przy użyciu funkcji c() i poprzez „:”
+```
+f <- c(5L,6L,7L,8L,9L)
+f <- 5:9
+```
+#### 13. Dodaj vectory v3 i f.
+```
+v3 + f
+```
+#### 14. W d zwiększ wartości w indeksach parzystych o 3 as w nieparzystych o 5
+```
+d <- d + c(5,3)
+```
+#### 15. W d zwiększ co trzecią wartość o 15
+```
+d <- d + c(0,0,15)
+```
 
 # 3.2 Część B
 #### 1. Utwórz vector składający się z 13 pierwszych małych liter alfabetu i nazwij go l (? letters)
