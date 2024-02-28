@@ -1,3 +1,29 @@
+# 2 R Studio (Posit)
+#### 1. Utwórz nowy skrypt
+#### 2. W oknie skryptu wpisz: pff <- 42
+#### 3. Wyślij kod do konsoli
+#### 4. Obejrzyj prawe górne okno RStudio
+#### 5. W konsoli wpisz pff
+#### 6. Wpisz w skrypcie pff/3
+#### 7. Wykonaj skrypt
+#### 8. W konsoli wpisz z <- 32; z
+#### 9. Przenieś ostatni wykonany kod do skryptu korzystając z historii
+#### 10. Stwórz nowy projekt p1
+#### 11. Utwórz skrypt i wpisz w niego x <- log(20); x
+#### 12. Wykonaj skrypt
+#### 13. Stwórz nowy projekt p2
+#### 14. Utwórz skrypt i wpisz:
+#### a. p <- 34;p
+#### b. z = p > 3
+#### 15. Wykonaj skrypt
+#### 16. Sprawdź wartość z
+#### 17. Przełącz się między projektami
+#### 18. Zainstaluj pakiet validate
+#### 19. Zaimportuj plik t1.csv
+#### 20. Zaimportuj plik t2.xlsx
+#### 21. Wyświetl wartości z pliku t2 na konsoli
+
+
 # 3 Vectors
 # 3.1 Część A
 #### 1. Na trzy różne sposoby utwórz vector o wartościach od -2 do 4 (-2, -1, 0, 1, 2, 3, 4). Przypisz je do
