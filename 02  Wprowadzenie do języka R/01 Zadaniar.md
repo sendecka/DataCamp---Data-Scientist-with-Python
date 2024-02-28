@@ -1,3 +1,17 @@
+# 1 Środowisko R
+#### 1. Uruchom R
+#### 2. W konsoli wpisz:
+#### a. x <- 12
+#### b. x
+#### c. x * 7
+#### d. y <- x*7
+#### e. y
+#### f. pi
+#### 3. Oblicz sin 165 stopni
+#### 4. Napisz skrypt przypisujący do a wartość 12, do b wartość 56 i wyświetlający (a+b)2
+#### 5. Wykonaj skrypt
+
+
 # 2 R Studio (Posit)
 #### 1. Utwórz nowy skrypt
 #### 2. W oknie skryptu wpisz: pff <- 42
